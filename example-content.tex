@@ -1,0 +1,176 @@
+%\section{Motivation}
+\begin{frame}{Motivation}
+	\begin{itemize}
+		\item {ADD CONTENT}
+	\end{itemize}
+	
+	\seprule
+	
+	Separated content, e.g., variable explanations
+\end{frame}
+\begin{frame}
+	Frame without a title
+	\begin{itemize}
+		\item Frames do not need to have a title...
+	\end{itemize}
+\end{frame}
+
+\section{Math Expressions}
+\begin{frame}{Integrals and Other Expressions}
+	\begin{equation}
+		\iint_{\partial\Omega}f(x)\diff{x} \in \complexes
+	\end{equation}
+	\begin{align}
+		E &= mc^2\\
+		F &= ma
+	\end{align}
+
+	\seprule
+	
+	\begin{tabular}{rl}
+		$m$ & Mass\\
+		$c$ & Speed of light
+	\end{tabular}
+\end{frame}
+\begin{frame}{Theorems, Lemmas, ...}
+	\begin{thm}
+		The following statement is correct
+		\begin{equation}
+			\frac{\partial f(\vec{x})}{\partial x_i} = \sum_{l=1}^{L}\cos\left(l\frac{2\pi}{L} + 0\right)
+		\end{equation}
+	\end{thm}
+\end{frame}
+
+\section{Elements}
+
+\begin{frame}[fragile]{Typography}
+	\begin{verbatim}The theme provides sensible defaults to
+		\emph{emphasize} text, \alert{accent} parts
+		or show \textbf{bold} results.\end{verbatim}
+	
+	\begin{center}becomes\end{center}
+	
+	The theme provides sensible defaults to \emph{emphasize} text,
+	\alert{accent} parts or show \textbf{bold} results.
+\end{frame}
+
+\begin{frame}{Font feature test}
+	\begin{itemize}
+		\item Regular
+		\item \textit{Italic}
+		\item \textsc{Small Caps}
+		\item \textbf{Bold}
+		\item \textbf{\textit{Bold Italic}}
+		\item \textbf{\textsc{Bold Small Caps}}
+		\item \texttt{Monospace}
+		\item \texttt{\textit{Monospace Italic}}
+		\item \texttt{\textbf{Monospace Bold}}
+		\item \texttt{\textbf{\textit{Monospace Bold Italic}}}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Lists}
+	\begin{columns}[T,onlytextwidth]
+		\column{0.33\textwidth}
+		Items
+		\begin{itemize}
+			\item Milk \item Eggs \item Potatoes
+		\end{itemize}
+		
+		\column{0.33\textwidth}
+		Enumerations
+		\begin{enumerate}
+			\item First, \item Second and \item Last.
+		\end{enumerate}
+		
+		\column{0.33\textwidth}
+		Descriptions
+		\begin{description}
+			\item[PowerPoint] Meeh. \item[Beamer] Yeeeha.
+		\end{description}
+	\end{columns}
+\end{frame}
+\begin{frame}{Tables}
+	\begin{table}
+		\caption{Largest cities in the world (source: Wikipedia)}
+		\begin{tabular}{@{} lr @{}}
+			\toprule
+			City & Population\\
+			\midrule
+			Mexico City & 20,116,842\\
+			Shanghai & 19,210,000\\
+			Peking & 15,796,450\\
+			Istanbul & 14,160,467\\
+			\bottomrule
+		\end{tabular}
+	\end{table}
+\end{frame}
+\begin{frame}{Blocks}
+	Three different block environments are pre-defined and may be styled with an
+	optional background color.
+	
+	\begin{columns}[T,onlytextwidth]
+		\column{0.45\textwidth}
+		\begin{block}{Default}
+			Block content.
+		\end{block}
+		
+		\begin{alertblock}{Alert}
+			Block content.
+		\end{alertblock}
+		
+		\begin{exampleblock}{Example}
+			Block content.
+		\end{exampleblock}
+		
+		\column{0.45\textwidth}
+		
+		\metroset{block=fill}
+		
+		\begin{block}{Default}
+			Block content.
+		\end{block}
+		
+		\begin{alertblock}{Alert}
+			Block content.
+		\end{alertblock}
+		
+		\begin{exampleblock}{Example}
+			Block content.
+		\end{exampleblock}
+		
+	\end{columns}
+\end{frame}
+\begin{frame}{Line plots}
+	\begin{figure}
+		\begin{tikzpicture}
+			\begin{axis}[
+				mlineplot,
+				width=0.9\textwidth,
+				height=6cm,
+				]
+				
+				\addplot {sin(deg(x))};
+				\addplot+[samples=100] {sin(deg(2*x))};
+				
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[standout,plain]
+	Standout Frame!
+\end{frame}
+
+
+\appendix
+\begin{frame}[fragile]{Backup slides}
+	Sometimes, it is useful to add slides at the end of your presentation to
+	refer to during audience questions.
+	
+	The best way to do this is to include the \verb|appendixnumberbeamer|
+	package in your preamble and call \verb|\appendix| before your backup slides.
+	
+	The theme will automatically turn off slide numbering and progress bars for
+	slides in the appendix.
+\end{frame}

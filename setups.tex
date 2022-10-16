@@ -1,0 +1,24 @@
+%\renewcommand*{\bibfont}{\scriptsize}
+\setbeamerfont{block body reference}{size=\scriptsize}
+\setbeamerfont{block title reference}{size=\scriptsize}
+
+\setbeamerfont{description item}{series=\mdseries}
+\setbeamerfont{alerted text}{series=\bfseries}
+
+
+\setbeamertemplate{title page}{
+\begin{minipage}[b][\textheight]{\textwidth}
+	\ifx\inserttitlegraphic\@empty\else\usebeamertemplate*{title graphic}\fi
+	\vfill%
+	\ifx\inserttitle\@empty\else\usebeamertemplate*{title}\fi
+	\ifx\insertsubtitle\@empty\else\usebeamertemplate*{subtitle}\fi
+	\usebeamertemplate*{title separator}
+
+	\ifx\beamer@shortauthor\@empty\else\usebeamertemplate*{author}\fi
+	\ifx\insertdate\@empty\else\usebeamertemplate*{date}\fi
+	\ifx\insertinstitute\@empty\else\usebeamertemplate*{institute}\fi
+	\vfil
+	\vspace*{1mm}
+\end{minipage}
+}
+\newcommand*{\seprule}{{\par\color{bgcolorAlt!90!fgcolor}\hrulefill\par\vspace*{1ex plus 0pt minus .5ex}}}

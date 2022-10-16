@@ -1,0 +1,34 @@
+% Mathematical Writing
+\DeclarePairedDelimiter{\abs}{\vert}{\vert}
+\DeclarePairedDelimiter{\norm}{\Vert}{\Vert}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+
+\newcommand*{\inv}[1]{\ensuremath{#1^{-1}}}
+\newcommand*{\positive}[1]{\ensuremath{\left[#1\right]^{+}}}
+
+\newcommand*{\diff}{\ensuremath{\mathrm{d}}}
+\newcommand*{\imag}{\ensuremath{\mathrm{j}}}
+\newcommand*{\e}{\ensuremath{\mathrm{e}}}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+%% change these to \mathbb, if you do not want to use the dsfont package
+\newcommand*{\reals}{\ensuremath{\mathds{R}}} 
+\newcommand*{\complexes}{\ensuremath{\mathds{C}}}
+\newcommand*{\naturals}{\ensuremath{\mathds{N}}}
+%%
+
+\newcommand*{\expect}[2][]{\ensuremath{\mathbb{E}_{#1}\left[#2\right]}}
+
+\newcommand*{\unif}{\ensuremath{\mathcal{U}}}
+\newcommand*{\normaldist}{\ensuremath{\mathcal{N}}}
+
+
+% THEOREMS
+\theoremstyle{plain}% default
+\newtheorem{thm}{Theorem}%[section]
+\newtheorem{lem}{Lemma}
+\newtheorem{prop}{Proposition}
+\newtheorem{cor}{Corollary}

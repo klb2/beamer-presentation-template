@@ -1,0 +1,65 @@
+% DESIGN COLORS
+\definecolor{highlight}{HTML}{7EBDC2} % accent color
+
+\definecolor{bgcolor}{HTML}{FCFCFF} % background color
+\definecolor{bgcolorAlt}{HTML}{ECF1FC} % alternative background color
+\definecolor{fgcolor}{HTML}{222244} % foreground/text color
+
+%
+\setbeamercolor{normal text}{%
+	fg=fgcolor,
+	bg=bgcolor,
+}
+\setbeamercolor{alerted text}{%
+	fg=highlight,
+}
+\setbeamercolor{palette primary}{%
+	use=normal text,
+	fg=normal text.fg,
+	bg=bgcolorAlt,%normal text.bg
+}
+
+\setbeamercolor{block title}{
+	bg=bgcolorAlt,
+}
+\setbeamercolor{block body}{
+	bg=bgcolorAlt,
+}
+\setbeamercolor{block title alerted}{%
+	use={palette primary, alerted text},
+	fg=palette primary.bg,
+	bg=alerted text.fg
+}
+\setbeamercolor{block title example}{%
+	use={block title, alerted text},
+	bg=block title.bg,
+	fg=alerted text.fg
+}
+%
+
+\pgfplotsset{legend style={fill=bgcolor,draw=fgcolor}}
+
+% PLOT COLORS
+%% Paul Tol High Contrast
+\definecolor{plot0}{HTML}{004488}
+\definecolor{plot1}{HTML}{DDAA33}
+\definecolor{plot2}{HTML}{BB5566}
+\definecolor{plot3}{HTML}{000000}
+\definecolor{plot4}{HTML}{AAAAAA}
+
+%% Paul Tol Vibrant
+%\definecolor{plot0}{HTML}{EE7733}
+%\definecolor{plot1}{HTML}{0077BB}
+%\definecolor{plot2}{HTML}{33BBEE}
+%\definecolor{plot3}{HTML}{EE3377}
+%\definecolor{plot4}{HTML}{CC3311}
+%\definecolor{plot5}{HTML}{009988}
+%\definecolor{plot6}{HTML}{BBBBBB}
+
+\pgfplotscreateplotcyclelist{colorcycle}{ %
+	{plot0, mark=*, thick, mark options=solid},
+	{plot1, mark=triangle*, thick, mark options=solid},
+	{plot2, mark=square*, thick, mark options=solid},
+	{plot3, mark=diamond*, thick, mark options=solid},
+	{plot4, mark=pentagon*, thick, mark options=solid},
+}
