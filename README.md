@@ -21,6 +21,15 @@ The file `presentation.tex` is the main file that needs to be compiled. It is
 recommended to use `lualatex`, if you want to use the Fira fonts that are the
 default fonts in the metropolis theme.
 
+## Requirements
+Make sure that you have a LaTeX installation on your computer, which includes
+the [metropolis theme](https://ctan.org/pkg/beamertheme-metropolis). It should
+be included in every popular LaTeX distribution like TeX live or MiKTeX.
+
+If you want to use the [Fira fonts](https://github.com/mozilla/Fira), you need
+to install them on your machine first.
+
+
 # Customization
 ## Colors
 The template allows an easy customization of the colors and styles according to
