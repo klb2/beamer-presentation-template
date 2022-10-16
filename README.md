@@ -4,6 +4,14 @@ This repository provides a clean and simple template for presentations made
 with the LaTeX [beamer package](https://ctan.org/pkg/beamer).
 The design is based on the [metropolis theme](https://github.com/matze/mtheme).
 
+It is highlighted by many guides on good slide design that slides should
+contain no clutter and as few objects as possible.
+Jean-luc Doumont says the following about slide templates in his talk about
+[Creating effective slides](https://youtu.be/meBXuTIPJQk?t=2200):
+> A template is a way to specify where the content should come and how the
+> content should look once it comes there.  
+> As long as you don't have content, there should be nothing.
+
 
 # Usage/Installation
 Simply copy all of the files into a new folder or click on "Use this template"
@@ -48,3 +56,9 @@ you simple need to adjust the `\titlegraphic` command like
 \titlegraphic{\includegraphics[height=.17\textheight]{logo.png}}
 ```
 where `logo.png` refers to the image file of the logo.
+
+# Example
+The following image shows the provided example slides with an example color
+scheme.
+
+![example presentation](example.png "Example slides with the predefined style")
