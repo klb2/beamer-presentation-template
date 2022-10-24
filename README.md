@@ -35,7 +35,7 @@ to install them on your machine first.
 The template allows an easy customization of the colors and styles according to
 your needs.
 In particular, you only need to edit the color definitions in the
-[`colors.tex`](colors.tex) file.
+[`setup-colors.tex`](setup-colors.tex) file.
 
 There are four colors in this theme which you can adjust to your needs:
 ```latex
