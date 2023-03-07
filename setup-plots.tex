@@ -1,0 +1,21 @@
+\pgfplotsset{compat=newest}
+\pgfplotsset{%
+	betterplot/.style={
+		width=.93\linewidth,
+		height=.5\textheight,
+		xlabel near ticks,
+		ylabel near ticks,
+		cycle list name=lineplot cycle,
+		mark options=solid,
+		xmajorgrids=true,
+		xminorgrids=true,
+		ymajorgrids=true,
+%		major grid style={dotted},
+		grid style={line width=.1pt, draw=gray!20},
+		major grid style={line width=.25pt,draw=gray!30},
+		legend cell align=left,
+		legend style = {
+			/tikz/every even column/.append style={column sep=0.33cm}
+		},
+	},
+}
