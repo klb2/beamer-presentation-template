@@ -13,13 +13,21 @@ Jean-luc Doumont says the following about slide templates in his talk about
 > As long as you don't have content, there should be nothing.
 
 
-# Usage/Installation
-Simply copy all of the files into a new folder or click on "Use this template"
-on GitHub.
+# Installation
+## On GitHub
+Click on ["Use this template"](https://github.com/new?template_name=beamer-presentation-template&template_owner=klb2).
 
-The file `presentation.tex` is the main file that needs to be compiled. It is
-recommended to use `lualatex`, if you want to use the Fira fonts that are the
-default fonts in the metropolis theme.
+## Local Installation
+Simply copy all of the `*.tex` files into a new folder.
+Alternatively, you can use the
+[`mkbeamerprsentation.sh`](mkbeamerprsentation.sh) script to automatically do
+this for you.
+The following command will create a new directory `name-of-the-paper-directory`
+with the template and initialize a new Git repository.
+
+```bash
+bash mkbeamerprsentation.sh name-of-the-paper-directory
+```
 
 ## Requirements
 Make sure that you have a LaTeX installation on your computer, which includes
@@ -28,6 +36,12 @@ be included in every popular LaTeX distribution like TeX live or MiKTeX.
 
 If you want to use the [Fira fonts](https://github.com/mozilla/Fira), you need
 to install them on your machine first.
+
+
+# Usage
+The file `presentation.tex` is the main file that needs to be compiled. It is
+recommended to use `lualatex`, if you want to use the Fira fonts that are the
+default fonts in the metropolis theme.
 
 
 # Customization
