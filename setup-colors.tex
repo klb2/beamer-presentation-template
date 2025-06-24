@@ -36,8 +36,6 @@
 }
 %
 
-\pgfplotsset{legend style={fill=bgcolor,draw=fgcolor}}
-
 % PLOT COLORS
 %% Paul Tol High Contrast
 \definecolor{plot0}{HTML}{004488}
@@ -54,11 +52,3 @@
 %\definecolor{plot4}{HTML}{CC3311}
 %\definecolor{plot5}{HTML}{009988}
 %\definecolor{plot6}{HTML}{BBBBBB}
-
-\pgfplotscreateplotcyclelist{lineplot cycle}{ %
-	{plot0, mark=*, thick, mark options=solid},
-	{plot1, mark=triangle*, thick, mark options=solid},
-	{plot2, mark=square*, thick, mark options=solid},
-	{plot3, mark=diamond*, thick, mark options=solid},
-	{plot4, mark=pentagon*, thick, mark options=solid},
-}

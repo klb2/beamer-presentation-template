@@ -1,4 +1,15 @@
 \pgfplotsset{compat=newest}
+
+\pgfplotsset{legend style={fill=bgcolor,draw=fgcolor}}
+
+\pgfplotscreateplotcyclelist{lineplot cycle}{ %
+	{plot0, mark=*, thick, mark options=solid},
+	{plot1, mark=triangle*, thick, mark options=solid},
+	{plot2, mark=square*, thick, mark options=solid},
+	{plot3, mark=diamond*, thick, mark options=solid},
+	{plot4, mark=pentagon*, thick, mark options=solid},
+}
+
 \pgfplotsset{%
 	betterplot/.style={
 		width=.93\linewidth,
